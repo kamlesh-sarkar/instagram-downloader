@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "IG 1-Click Downloader",
+  "version": "1.1",
+  "description": "Click the extension icon to directly download the current Instagram Post or Reel.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://*.instagram.com/*"
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Download IG Media",
+    "default_icon": "icon.png"
+  }
+}
